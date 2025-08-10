@@ -28,9 +28,9 @@
 
         <div class="alert alert-success mb-3" role="alert">
             <p>Shishamoが好きな譜面とShishamoが作った譜面とかが入っています。次期難易度表フォーマット対応。</p>
-            <p>難易度表の読み込みと表示に数秒かかります。</p>
-            <hr>
-            <p class="mb-0">究極完全体柳葉魚的難易度表です。</p>
+            基本的に発狂表基準。<br>
+            割と査定は適当です。許して。<br>
+            段位はいつか作ります。
         </div>
 
 
@@ -55,7 +55,7 @@
                 var obj = $("#table_int");
 
                 obj.html("");
-                $("<thead class='table-dark'><tr><th>Level</th><th>Title</th><th>Artist</th><th>Comment</th></tr></thead><tbody>")
+                $("<thead class='table-dark'><tr><th>Level</th><th>Title</th><th>SongArtist</th><th>Charter</th><th>Comment</th><th>ChartView</th></tr></thead><tbody>")
                     .appendTo(obj);
                 var obj_sep = null;
                 for (var i = 0; i < info.length; i++) {
@@ -77,16 +77,26 @@
                     $("<td width='5%'>" + mark + x + "</td>").appendTo(str);
 
                     // Title
-                    $("<td width='45%'>" +
+                    $("<td width='35%'>" +
                         "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[
                             i]
                         .md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
 
                     // Artist
-                    $("<td width='40%'>" + info[i].artist + "</td>").appendTo(str);
+                    $("<td width='20%'>" + info[i].song_artist + "</td>").appendTo(str);
+                    
+                    // Charter
+                    $("<td width='20%'>" + info[i].charter + "</td>").appendTo(str);
 
                     // Comment
                     $("<td width='10%'>" + info[i].comment + "</td>").appendTo(str);
+
+                    // 譜面画像
+                    $("<td width='10%'>" +
+                        "<a href='https://bms-score-viewer.pages.dev/view?md5=" + info[
+                            i]
+                        .md5 + "' target='_blank'>" + "譜面画像" + "</a></td>").appendTo(str);
+                    
                     str.appendTo(obj);
                     count++;
 
