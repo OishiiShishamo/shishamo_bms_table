@@ -61,7 +61,7 @@
                 for (var i = 0; i < info.length; i++) {
                     if (x != info[i].level) {
                         if (obj_sep != null) {
-                            obj_sep.html("<td colspan='4'>" + "<b>" + mark + x + " (" + count +
+                            obj_sep.html("<td colspan='6'>" + "<b>" + mark + x + " (" + count +
                                 "譜面)</b></td>");
                         }
                         obj_sep = $("<tr class='table-dark' style='text-align:center' id='" + mark + info[i].level +
@@ -77,7 +77,7 @@
                     $("<td width='5%'>" + mark + x + "</td>").appendTo(str);
 
                     // Title
-                    $("<td width='35%'>" +
+                    $("<td width='20%'>" +
                         "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[
                             i]
                         .md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
@@ -89,7 +89,7 @@
                     $("<td width='20%'>" + info[i].charter + "</td>").appendTo(str);
 
                     // Comment
-                    $("<td width='10%'>" + info[i].comment + "</td>").appendTo(str);
+                    $("<td width='35%'>" + info[i].comment + "</td>").appendTo(str);
 
                     // 譜面画像
                     $("<td width='10%'>" +
