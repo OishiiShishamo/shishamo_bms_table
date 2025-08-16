@@ -4,6 +4,10 @@
     "data_url" : "https://script.google.com/macros/s/AKfycbzXcUqbCy5gLhWFlaGvzdX_FXqKpSzL4ZMOJaC6oPv5AnA_K1i17m7jXz58FFXT3450Uw/exec",
     "level_order" : ["-n",1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,999999999999999999999,"P","PB"],
     "course":[
-        {"name":"Omega(超鈺)","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["8fd349d098901720056daf5ca35ec199","adc11e3d8d0e251c60e3704638928857","24b76ca52b284726439a5021a41e2d42","df0d4c0748f17fd1f5dda42f1327b8bc"]}
+        {"name":"Omega(超鈺)","constraint":["grade_random","gauge_lr2","ln",""],"md5": [
+            "8fd349d098901720056daf5ca35ec199",
+            "adc11e3d8d0e251c60e3704638928857",
+            "24b76ca52b284726439a5021a41e2d42",
+            "df0d4c0748f17fd1f5dda42f1327b8bc"]}
     ]
 }
